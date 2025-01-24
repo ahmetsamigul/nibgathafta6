@@ -3,16 +3,26 @@
         <title>hafta6</title>
     </head>
     <body>
+        <div id="buttons"></div>
 
 
         <script>
+            const containerDiv= document.getElementById("buttons");
+            const dataCount= 78;
+            const dataCountPerPage= 10;
+
+            let pageCount= Math.ceil(dataCount / dataCountPerPage);
+
             
-            function test(){
-                x=4;
+            for(let i=1; i<=pageCount; i++){
+                containerDiv.innerHTML += "<button onclick='goToPage(" + i + ")'>" + i + "</button>" ;
             }
-            test();
-            console.log(x);
-            
+
+            function goToPage(pageIndex) {
+                alert(pageIndex);
+            }
+
+
         </script>
     </body>
 </html>
