@@ -1,0 +1,1 @@
+# hafta 6 video takip
