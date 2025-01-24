@@ -15,7 +15,8 @@
 
             
             for(let i=1; i<=pageCount; i++){
-                containerDiv.innerHTML += "<button onclick='goToPage(" + i + ")'>" + i + "</button>" ;
+                containerDiv.innerHTML += `<button onclick= "goToPage(${i})">${i}</button>`;
+                // "<button onclick='goToPage(" + i + ")'>" + i + "</button>" ;
             }
 
             function goToPage(pageIndex) {
