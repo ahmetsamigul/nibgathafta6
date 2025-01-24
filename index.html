@@ -3,15 +3,20 @@
         <title>hafta6</title>
     </head>
     <body>
-       <div id="buttons"></div>
+       
 
 
         <script>
-            const containerDiv= document.getElementById("buttons");
-            var array1= [0, 1, 2, 3];
-            array1.forEach((item, index) => {
-                containerDiv.innerHTML += `<button>${item}</button>`;
+            var object= {
+                first: "ahmet",
+                second: "sami",
+                third: "gul",
+            };
+            console.log(Object.keys(object));
+            Object.keys(object).forEach((item)=>{
+                console.log(object[item]);
             });
+            
         </script>
     </body>
 </html>
